@@ -70,6 +70,10 @@ body {
     width: 425px;
 }
 
+.contacts__header_text {
+    text-align: center;
+}
+
 .set_of_services {
     display: flex;
     justify-content: space-between;
@@ -91,4 +95,24 @@ body {
 
 .footer__text {
     width: 495px;
+}
+
+.contacts__main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card_info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.set_of_services {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
