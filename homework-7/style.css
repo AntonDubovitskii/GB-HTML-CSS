@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 .text_content {
@@ -393,8 +394,9 @@ body {
     }
 
     .top__info {
-        background-size: 40%;
-        background-position: right 270px;
+        background-size: 44%;
+        background-position: right 100%;
+        padding-bottom: 30px;
     }
 
     .set_of_services {
@@ -438,8 +440,14 @@ body {
 
 @media (max-width: 667px) {
 
+    .container {
+        padding-left: 16px;
+        padding-right: 17px;
+    }
+
     .head-menu {
         padding-top: 24px;
+        padding-right: 2px;
     }
 
     .top {
@@ -454,19 +462,23 @@ body {
         flex-direction: column;
         align-items: center;
         background-image: none;
+        padding-bottom: 0;
     }
 
     .major_heading {
-        width: 100%;
+        width: 84%;
         font-size: 32px;
-        line-height: 37px;
+        font-weight: 300;
+        line-height: 38px;
         margin-bottom: 12px;
         text-align: center;
+        letter-spacing: 0.04em;
     }
 
     .heading {
         font-size: 24px;
         line-height: 28px;
+        letter-spacing: 0;
     }
 
     .header_text {
@@ -475,9 +487,14 @@ body {
     }
 
     .heading_button {
+        margin-top: 32px;
         font-size: 12px;
         line-height: 26px;
-        padding: 0 8px;
+        padding: 2px 15px;
+    }
+
+    .what-we-do {
+        margin-top: 0;
     }
 
     .project__text {
@@ -489,6 +506,8 @@ body {
 
     .project__text_parent_block {
         left: 16px;
+        font-size: 16px;
+        line-height: 19px;
     }
 
     .project__parent {
@@ -507,19 +526,28 @@ body {
 
     .set_of_services {
         padding-top: 32px;
+        padding-bottom: 32px;
 
     }
 
     .service {
         width: 100%;
+        padding: 40px 30px 21px;
+    }
+
+    .service_text {
+        padding-bottom: 46px;
     }
 
     .text_project {
         width: 100%;
+        margin: 32px auto 82px;
     }
 
     .footer {
         margin-top: 64px;
+        padding-bottom: 32px;
+
     }
 
     .footer__info {
@@ -534,6 +562,18 @@ body {
         line-height: 28px;
         text-align: center;
         letter-spacing: 0;
+    }
+
+    .card_info {
+        margin-top: 32px;
+        margin-bottom: 20px;
+        margin-left: 16px;
+    }
+
+    .card_element {
+        padding-left: 23px;
+        padding-bottom: 17px;
+        margin-right: 0;
     }
 
     .footer__text {
