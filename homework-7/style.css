@@ -52,6 +52,11 @@ body {
     margin: 0 auto;
 }
 
+.contacts_content_container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
 .major_heading {
     width: 512px;
     font-weight: 300;
@@ -90,9 +95,12 @@ body {
 
 .contacts__list {
     list-style-type: none;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .contacts__phone_text {
+    padding-bottom: 16px;
     opacity: 1;
 }
 
@@ -148,9 +156,13 @@ body {
     box-sizing: border-box;
     border-radius: 10px;
     opacity: 0.4;
+    margin-bottom: 32px;
+    height: 72px;
+    width: 100%;
 }
 
 .input_area_button {
+    width: 100%;
     background: #5A98D0;
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
     border-radius: 10px;
@@ -160,6 +172,43 @@ body {
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
+    padding: 23px 183px;
+    letter-spacing: 0.04em;
+}
+
+input[type="text"] {
+    padding-left: 42px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.2;
+}
+
+input[type="email"] {
+    padding-left: 42px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.2;
+}
+
+.contacts_textarea {
+    height: 144px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 70px;
+    padding-left: 42px;
+    padding-right: 54px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.2;
 }
 
 .head-menu {
@@ -327,6 +376,8 @@ body {
 .contacts__main {
     display: flex;
     justify-content: space-between;
+    padding-top: 57px;
+    padding-bottom: 96px;
 }
 
 .footer__line {
@@ -371,6 +422,7 @@ body {
     box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
     border-radius: 10px;
     width: 60%;
+    padding: 50px 50px;
 }
 
 .top__contacts {
@@ -382,9 +434,40 @@ body {
     height: 250px;
     background-image: url(img/contacts_background.svg);
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: center;
     padding-top: 51px;
     box-sizing: border-box;
+    margin-top: 54px;
+}
+
+.contacts__picture {
+    margin-bottom: 56px;
+}
+
+.adress_text {
+    padding-top: 24px;
+    padding-bottom: 40px;
+    padding-right: 101px;
+    letter-spacing: 0.04em;
+}
+
+.contacts__form_signatures {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.8;
+    padding-bottom: 8px;
+}
+
+.contacts__form_heading {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    margin-bottom: 48px
 }
 
 @media (max-width: 1024px) {
@@ -414,12 +497,13 @@ body {
     }
 
     .footer__info {
-        padding-top: 47px;
-        padding-bottom: 64px;
+        padding: 47px 92px 64px 92px;
     }
 
     .footer__button {
         padding: 4px 31px;
+        margin-top: 65px;
+        margin-left: 51px;
     }
 
     .card_info {
@@ -427,7 +511,7 @@ body {
         flex-direction: column;
         justify-content: space-between;
         margin-top: 64px;
-        margin-bottom: 64px;
+        margin-bottom: 39px;
         margin-left: 19px;
     }
 
@@ -435,6 +519,40 @@ body {
         padding-left: 36px;
         padding-bottom: 25px;
         margin-right: 0;
+    }
+
+    .contacts__main {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+
+    .contacts__info {
+        padding-left: 237px;
+        padding-right: 232px;
+    }
+
+    .feedback-form {
+        margin-top: 64px;
+        margin-left: 124px;
+        margin-right: 124px;
+        width: auto;
+    }
+
+    .adress_text {
+        padding-right: 0;
+    }
+
+    .footer__business_card {
+        padding-left: 73px;
+        padding-right: 91px;
+    }
+
+    .contacts__picture {
+        margin-bottom: 64px;
     }
 }
 
@@ -580,15 +698,97 @@ body {
         text-align: center;
         margin: 0 auto;
         padding-top: 32px;
-        padding-bottom: 40px;
+        padding-bottom: 33px;
     }
 
     .footer__info {
         display: flex;
         flex-direction: column;
+        padding: 18px 16px 32px 16px;
     }
 
     .copyright_text {
         text-align: center;
     }
+
+    .feedback-form {
+        margin-top: 32px;
+        margin-left: 17px;
+        margin-right: 15px;
+        width: auto;
+        padding: 36px 36px;
+    }
+
+    .contacts__form_heading {
+        font-size: 16px;
+    }
+
+    .contacts__form_signatures {
+        font-size: 14px;
+    }
+
+    .input_area_button {
+        width: 100%;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        padding: 15px 50px;
+
+    }
+
+    .contacts_heading {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .contacts__header_text {
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+
+    .contacts__main {
+        padding-top: 51px;
+        padding-bottom: 32px;
+    }
+
+    .contacts__info {
+        padding-left: 40px;
+        padding-right: 36px;
+    }
+
+    .input_area {
+        height: 46px;
+        margin-bottom: 21px;
+    }
+
+    textarea {
+        height: 92px;
+    }
+
+    .contacts__form_signatures {
+        padding-bottom: 5px;
+    }
+
+    .contacts__form_heading {
+        margin-bottom: 31px;
+    }
+
+    .footer__business_card {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .footer__button {
+        padding: 4px 31px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .contacts_textarea {
+        margin-bottom: 46px;
+    }
+
 }
