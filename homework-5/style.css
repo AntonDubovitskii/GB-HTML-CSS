@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.text_content {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+
+.major_heading {
+    width: 510px;
+    font-size: 64px;
+    color: #1F3F68;
+}
+
+.contacts_heading {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 36px;
+    text-align: center;
+}
+
+.lesser_heading {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.input_area {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.input_area_button {
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+/*Ниже я разместил новые стили, которые добавил именно для дз по 5 заданию*/
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.head-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_text {
+    width: 425px;
+}
+
+.contacts__header_text {
+    text-align: center;
+}
+
+.set_of_services {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service {
+    width: 359px;
+}
+
+.card_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__h3 {
+    width: 340px;
+    text-align: left;
+}
+
+.footer__text {
+    width: 495px;
+}
+
+.contacts__main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card_info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.set_of_services {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
